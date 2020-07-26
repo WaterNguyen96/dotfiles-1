@@ -39,3 +39,4 @@ alias rstouch='sudo modprobe -r psmouse && sudo modprobe psmouse'
 
 alias android-monitor='cd ~/Android/Sdk/tools && ./monitor'
 alias showport='sudo lsof -PiTCP -sTCP:LISTEN'
+alias clr="clear"
