@@ -1,8 +1,5 @@
 #!/bin/sh
 install() {
-	curl -Lso /tmp/mono.zip https://github.com/JetBrains/JetBrainsMono/releases/download/v1.0.6/JetBrainsMono-1.0.6.zip
-	unzip -j /tmp/mono.zip '*/ttf/*' -d "$1"
-
 	curl -Lso /tmp/hack.zip https://github.com/source-foundry/Hack/releases/download/v3.003/Hack-v3.003-ttf.zip
 	unzip -j /tmp/hack.zip -d "$1"
 }
