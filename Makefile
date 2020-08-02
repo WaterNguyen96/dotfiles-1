@@ -10,3 +10,10 @@ check:
 
 ci: check
 	./script/test
+
+uninstall:
+	@unlink ~/.gitignore
+	@unlink ~/.gitconfig.local
+	@unlink ~/.vim
+	@unlink ~/.vimrc
+	@rm -rf ~/.dotfiles
