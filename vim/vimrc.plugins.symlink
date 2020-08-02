@@ -1,0 +1,53 @@
+
+" load plugins
+call plug#begin('~/.vim/plugged')
+Plug 'scrooloose/nerdtree'
+Plug 'fatih/vim-go', {'tag': '*', 'do': ':GoInstallBinaries' }
+Plug 'nsf/gocode', {'rtp': 'vim'}
+
+" auto-complete for golang et al
+if has('nvim')
+  Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+else
+  Plug 'Shougo/deoplete.nvim'
+  Plug 'roxma/nvim-yarp'
+  Plug 'roxma/vim-hug-neovim-rpc'
+endif
+Plug 'zchee/deoplete-go', { 'do': 'make'}
+
+" provides insert mode auto-completion for quotes, parens, brackets, etc.
+Plug 'Raimondi/delimitMate'
+
+" fuzzy file finder
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+
+" langs et al
+Plug 'cespare/vim-toml'
+Plug 'fatih/vim-nginx'
+Plug 'fatih/vim-hclfmt'
+Plug 'Yggdroot/indentLine'
+Plug 'godlygeek/tabular'
+Plug 'terryma/vim-multiple-cursors'
+Plug 'ntpeters/vim-better-whitespace'
+Plug 'tpope/vim-endwise'
+Plug 'elzr/vim-json'
+Plug 'junegunn/vim-easy-align'
+Plug 'ekalinin/Dockerfile.vim'
+Plug 'puppetlabs/puppet-syntax-vim'
+Plug 'luochen1990/rainbow'
+
+" git integration
+Plug 'tpope/vim-fugitive'
+Plug 'airblade/vim-gitgutter'
+
+" safe buffer deletion
+Plug 'mhinz/vim-sayonara', { 'on': 'Sayonara' }
+
+" Delete buffers and close files in Vim without closing your windows or
+" messing up your layout
+Plug 'moll/vim-bbye'
+
+" Colors
+Plug 'dracula/vim', {'as': 'dracula'}
+
+call plug#end()
