@@ -1,1 +1,3 @@
-export PATH="$PATH:`/opt/firefox/firefox`"
+#!bin/sh
+
+export PATH="$PATH:/opt/firefox/firefox"

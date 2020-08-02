@@ -16,4 +16,5 @@ uninstall:
 	@unlink ~/.gitconfig.local
 	@unlink ~/.vim
 	@unlink ~/.vimrc
+	@unlink ~/.editorconfig
 	@rm -rf ~/.dotfiles
