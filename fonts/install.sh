@@ -15,5 +15,6 @@ else
 	mkdir -p ~/.local/share/fonts/
 	install ~/.local/share/fonts/
 	fc-cache -fv
+	# I like Firefonts settings "editor.fontLigatures" in vscode
 	sudo add-apt-repository universe && sudo apt install fonts-firacode
 fi

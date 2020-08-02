@@ -34,9 +34,3 @@ if [ "$(uname -s)" != "Darwin" ]; then
 fi
 
 alias robomongo='/usr/bin/robomongo/bin/robo3t'
-# Workaround for Thinkpad after sleep, mouse gesture incorrect
-alias rstouch='sudo modprobe -r psmouse && sudo modprobe psmouse'
-
-alias android-monitor='cd ~/Android/Sdk/tools && ./monitor'
-alias showport='sudo lsof -PiTCP -sTCP:LISTEN'
-alias clr="clear"

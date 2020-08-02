@@ -83,3 +83,7 @@ if test -d /usr/local/opt/fzf/shell; then
 else
 	bindkey '^R' history-incremental-search-backward
 fi
+
+# accpet  with tab press and, decline with Ctrl+Space in zsh/autosuggestions
+bindkey '^I' autosuggest-accept
+bindkey '^ ' autosuggest-clear
