@@ -1,6 +1,7 @@
 [difftool "diffmerge"]
 	cmd = diffmerge $LOCAL $REMOTE
 [alias]
+	adog= log --all --decorate --oneline --graph --date=relative
 	c = commit
 	co = checkout
 	count = shortlog -sn

@@ -20,7 +20,7 @@ alias gcm='git commit -m'
 alias gcam='git commit -s -a -m'
 alias gs='git status -sb'
 alias gpr='gp && git pr'
-alias glnext='git log --oneline $(git describe --tags --abbrev=0 @^)..@'
+alias glnext="git log --graph --abbrev-commit --decorate --format=format:'%C(bold red)%h%C(reset) 🌵%C(bold yellow)%D%C(reset) %C(#2767d4)%f%Creset%n%C(white)%B%C(reset)%n ✍️ %C(dim white) %an%C(reset)            %C(cyan)⌚ %ar%C(reset)%n%n' --all"
 
 if command -v svu >/dev/null 2>&1; then
 	alias gtpatch='git tag `svu p`; svu c'
