@@ -1,5 +1,18 @@
 #!/bin/sh
 
+# if ! [ -f git/gitconfig.local.symlink ]; then
+# 	info 'setup gitconfig'
+
+# 	user ' - What is your github author name?'
+# 	read -e git_authorname
+# 	user ' - What is your github author email?'
+# 	read -e git_authoremail
+
+# 	sed -e "s/AUTHORNAME/$git_authorname/g" -e "s/AUTHOREMAIL/$git_authoremail/g" git/gitconfig.local.symlink.example >> git/gitconfig.local.symlink
+
+# 	success 'gitconfig'
+# fi
+
 # Don't ask ssh password all the time
 if [ "$(uname -s)" = "Darwin" ]; then
 	git config --global credential.helper osxkeychain

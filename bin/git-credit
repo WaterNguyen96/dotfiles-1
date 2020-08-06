@@ -1,0 +1,14 @@
+#!/bin/sh
+#
+# A very slightly quicker way to credit an author on commit(s).
+#
+# $1 - The full name of the author.
+# $2 - The email address of the author.
+# $3 - The commit(s) to be re-credited
+#
+# Examples
+#   For instance, you accidentally has commited as Foo Bar <foo.bar@example.com> starting at a0z8p3
+#   git credit "Zach Holman" zach@example.com a0z8p3^
+#
+
+git rebase $3 --exec "git commit --amend --author "$1 <$2>" --no-edit"
