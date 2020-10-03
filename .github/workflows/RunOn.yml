@@ -1,6 +1,6 @@
 # This is a basic workflow that is manually triggered
 
-name: Manual workflow
+name: run on workflow
 
 # Controls when the action will run. Workflow runs when manually triggered using the UI
 # or API.
@@ -27,7 +27,7 @@ jobs:
     defaults:
       run:
         shell: bash
-        working-directory: scripts
+        working-directory: script
     strategy:
       matrix:
         os: [ubuntu-latest, macOS-latest]
